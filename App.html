@@ -214,48 +214,48 @@
   	</head>
 		<body style="overflow: hidden;margin:auto;height:926px">
 			<div class="container">
-				<div class="buttonLight" onclick="buttonLight()">Light</div>
-				<div class="buttonOpenClose" onclick="buttonOpenClose()">Open/Close</div>
-				<div class="buttonLower" onclick="buttonLower()">Lower</div>
-				<div class="buttonHigher" onclick="buttonHigher()">Higher</div>
-				<div class="buttonUp" onclick="buttonUp()"><img src="Arrow.png" style="width: 60%;transform: rotate(45deg);margin-top: 21px;margin-left: 10px;"></div>
-				<div class="buttonLeft" onclick="buttonLeft()"><img src="Arrow.png" style="width: 60%;transform: rotate(-45deg);margin-top: 10px;margin-left: -4px;"></div>
-				<div class="buttonRight" onclick="buttonRight()"><img src="Arrow.png" style="width: 60%;transform: rotate(135deg);margin-top: 29px;margin-left: 8px;"></div>
-				<div class="buttonDown" onclick="buttonDown()"><img src="Arrow.png" style="width: 60%;transform: rotate(225deg);margin-top: 26px;margin-left: -2px;"></div>
+				<div class="buttonLight" ontouchstart="buttonLight('Light Start')" ontouchend="buttonLight('Light End')">Light</div>
+				<div class="buttonOpenClose" ontouchstart="buttonOpenClose('Open/Close Start')" ontouchend="buttonOpenClose('Open/Close End')">Open/Close</div>
+				<div class="buttonLower" ontouchstart="buttonLower('Lower Start')" ontouchend="buttonLower('Lower End')">Lower</div>
+				<div class="buttonHigher" ontouchstart="buttonHigher('Higher Start')" ontouchend="buttonHigher('Higher End')">Higher</div>
+				<div class="buttonUp" ontouchstart="buttonUp('Up Start')" ontouchend="buttonUp('Up End')"><img src="Arrow.png" style="width: 60%;transform: rotate(45deg);margin-top: 21px;margin-left: 10px;"></div>
+				<div class="buttonLeft" ontouchstart="buttonLeft('Left Start')" ontouchend="buttonLeft('Left End')"><img src="Arrow.png" style="width: 60%;transform: rotate(-45deg);margin-top: 10px;margin-left: -4px;"></div>
+				<div class="buttonRight" ontouchstart="buttonRight('Right Start')" ontouchend="buttonRight('Right End')"><img src="Arrow.png" style="width: 60%;transform: rotate(135deg);margin-top: 29px;margin-left: 8px;"></div>
+				<div class="buttonDown" ontouchstart="buttonDown('Down Start')" ontouchend="buttonDown('Down End')"><img src="Arrow.png" style="width: 60%;transform: rotate(225deg);margin-top: 26px;margin-left: -2px;"></div>
 				<img src="scientific-lab-robotic-arm-pov-free-video.jpg" alt="RobotPhoto" style="height:100%">
 			</div>
 
 			<script>
-					function buttonLight() {
-						console.log("Light Hit");
+					function buttonLight(status) {
+						console.log(status);
 					}
 
-					function buttonOpenClose() {
-						console.log("Open/Close Hit");
+					function buttonOpenClose(status) {
+						console.log(status);
 					}
 
-					function buttonLower() {
-						console.log("Lower Hit");
+					function buttonLower(status) {
+						console.log(status);
 					}
 
-					function buttonHigher() {
-						console.log("Higher Hit");
+					function buttonHigher(status) {
+						console.log(status);
 					}
 
-					function buttonUp() {
-						console.log("Up Hit");
+					function buttonUp(status) {
+						console.log(status);
 					}
 
-					function buttonLeft() {
-						console.log("Left Hit");
+					function buttonLeft(status) {
+						console.log(status);
 					}
 
-					function buttonRight() {
-						console.log("Right Hit");
+					function buttonRight(status) {
+						console.log(status);
 					}
 
-					function buttonDown() {
-						console.log("Down Hit");
+					function buttonDown(status) {
+						console.log(status);
 					}
 			</script>
   	</body>    
