@@ -214,7 +214,7 @@
   	</head>
 		<body style="overflow: hidden;margin:auto;height:926px">
 			<div class="container">
-				<div class="buttonLight" ontouchstart="buttonLight('Light Start')" ontouchend="buttonLight('Light End')">Light</div>
+				<div class="buttonLight" id="buttonLight" ontouchstart="buttonLight()">Light</div>
 				<div class="buttonOpenClose" ontouchstart="buttonOpenClose('Open/Close Start')" ontouchend="buttonOpenClose('Open/Close End')">Open/Close</div>
 				<div class="buttonLower" ontouchstart="buttonLower('Lower Start')" ontouchend="buttonLower('Lower End')">Lower</div>
 				<div class="buttonHigher" ontouchstart="buttonHigher('Higher Start')" ontouchend="buttonHigher('Higher End')">Higher</div>
@@ -226,8 +226,18 @@
 			</div>
 
 			<script>
-					function buttonLight(status) {
+					var counter = 0;
+					function buttonLight() {
+						if(counter == 0){
+							counter = 1;
+							document.getElementById("buttonLight").style.background = "#1b07facc";
+						}
+						else{
+							counter = 0;
+							document.getElementById("buttonLight").style.background = "#fa0707cc";
+						}
 						console.log(status);
+
 					}
 
 					function buttonOpenClose(status) {
