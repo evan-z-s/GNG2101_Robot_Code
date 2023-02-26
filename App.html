@@ -224,96 +224,95 @@
 		</div>
 
 		<script>
-				var counter = 0;
-				function buttonLight() {
-					if(counter == 0){
-						counter = 1;
-						document.getElementById("buttonLight").style.background = "#1b07facc";
-					}
-					else{
-						counter = 0;
-						document.getElementById("buttonLight").style.background = "#fa0707cc";
-					}
-					console.log(status);
-
+			var counter = 0;
+			function buttonLight() {
+				if(counter == 0){
+					counter = 1;
+					document.getElementById("buttonLight").style.background = "#1b07facc";
 				}
-
-				function buttonOpenClose(status) {
-					console.log(status);
+				else{
+					counter = 0;
+					document.getElementById("buttonLight").style.background = "#fa0707cc";
 				}
+				console.log(status);
+			}
 
-				function buttonLower(status) {
-					console.log(status);
-				}
+			function buttonOpenClose(status) {
+				console.log(status);
+			}
 
-				function buttonHigher(status) {
-					console.log(status);
-				}
+			function buttonLower(status) {
+				console.log(status);
+			}
 
-				function buttonUp(status) {
-					console.log(status);
-				}
+			function buttonHigher(status) {
+				console.log(status);
+			}
 
-				function buttonLeft(status) {
-					console.log(status);
-				}
+			function buttonUp(status) {
+				console.log(status);
+			}
 
-				function buttonRight(status) {
-					console.log(status);
-				}
+			function buttonLeft(status) {
+				console.log(status);
+			}
 
-				function buttonDown(status) {
-					console.log(status);
-				}
+			function buttonRight(status) {
+				console.log(status);
+			}
 
+			function buttonDown(status) {
+				console.log(status);
+			}
 
-			/*  var webSocketCameraUrl = "ws:\/\/" + window.location.hostname + "/Camera";
-				var webSocketCarInputUrl = "ws:\/\/" + window.location.hostname + "/CarInput";      
-				var websocketCamera;
-				var websocketCarInput;
-				
-				function initCameraWebSocket() 
+			/*
+		 	var webSocketCameraUrl = "ws:\/\/" + window.location.hostname + "/Camera";
+			var webSocketCarInputUrl = "ws:\/\/" + window.location.hostname + "/CarInput";      
+			var websocketCamera;
+			var websocketCarInput;
+			
+			function initCameraWebSocket() 
+			{
+				websocketCamera = new WebSocket(webSocketCameraUrl);
+				websocketCamera.binaryType = 'blob';
+				websocketCamera.onopen    = function(event){};
+				websocketCamera.onclose   = function(event){setTimeout(initCameraWebSocket, 2000);};
+				websocketCamera.onmessage = function(event)
 				{
-					websocketCamera = new WebSocket(webSocketCameraUrl);
-					websocketCamera.binaryType = 'blob';
-					websocketCamera.onopen    = function(event){};
-					websocketCamera.onclose   = function(event){setTimeout(initCameraWebSocket, 2000);};
-					websocketCamera.onmessage = function(event)
-					{
-					var imageId = document.getElementById("cameraImage");
-					imageId.src = URL.createObjectURL(event.data);
-					};
-				}
-				
-				function initCarInputWebSocket() 
+				var imageId = document.getElementById("cameraImage");
+				imageId.src = URL.createObjectURL(event.data);
+				};
+			}
+			
+			function initCarInputWebSocket() 
+			{
+				websocketCarInput = new WebSocket(webSocketCarInputUrl);
+				websocketCarInput.onopen    = function(event)
 				{
-					websocketCarInput = new WebSocket(webSocketCarInputUrl);
-					websocketCarInput.onopen    = function(event)
-					{
-					sendButtonInput("Speed", document.getElementById("Speed").value);
-					sendButtonInput("Light", document.getElementById("Light").value);
-					sendButtonInput("Pan", document.getElementById("Pan").value);
-					sendButtonInput("Tilt", document.getElementById("Tilt").value);                    
-					};
-					websocketCarInput.onclose   = function(event){setTimeout(initCarInputWebSocket, 2000);};
-					websocketCarInput.onmessage = function(event){};        
-				}
-				
-				function initWebSocket() 
-				{
-					initCameraWebSocket ();
-					initCarInputWebSocket();
-				}
-				function sendButtonInput(key, value) 
-				{
-					var data = key + "," + value;
-					websocketCarInput.send(data);
-				}
-				
-				window.onload = initWebSocket;
-				document.getElementById("mainTable").addEventListener("touchend", function(event){
-					event.preventDefault()
-				});      
+				sendButtonInput("Speed", document.getElementById("Speed").value);
+				sendButtonInput("Light", document.getElementById("Light").value);
+				sendButtonInput("Pan", document.getElementById("Pan").value);
+				sendButtonInput("Tilt", document.getElementById("Tilt").value);                    
+				};
+				websocketCarInput.onclose   = function(event){setTimeout(initCarInputWebSocket, 2000);};
+				websocketCarInput.onmessage = function(event){};        
+			}
+			
+			function initWebSocket() 
+			{
+				initCameraWebSocket ();
+				initCarInputWebSocket();
+			}
+			function sendButtonInput(key, value) 
+			{
+				var data = key + "," + value;
+				websocketCarInput.send(data);
+			}
+			
+			window.onload = initWebSocket;
+			document.getElementById("mainTable").addEventListener("touchend", function(event){
+				event.preventDefault()
+			});      
 			*/
 		</script>
 	</body>    
