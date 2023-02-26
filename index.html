@@ -3,6 +3,15 @@
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     	<style>
+			.noselect {
+      			-webkit-touch-callout: none; /* iOS Safari */
+       	 		-webkit-user-select: none; /* Safari */
+         		-khtml-user-select: none; /* Konqueror HTML */
+           		-moz-user-select: none; /* Firefox */
+            	-ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently
+                                      supported by Chrome and Opera */
+    		}	
 			.buttonLight{
 				position: absolute;
 				width: 150px;
@@ -211,7 +220,7 @@
 	</head>
 
 	<body style="overflow: hidden;margin:auto">
-		<div class="container">
+		<div class="container noselect">
 			<div class="buttonLight" id="buttonLight" ontouchstart="buttonLight()">Light</div>
 			<div class="buttonOpenClose" ontouchstart="buttonOpenClose('Open/Close Start')" ontouchend="buttonOpenClose('Open/Close End')">Open/Close</div>
 			<div class="buttonLower" ontouchstart="buttonLower('Lower Start')" ontouchend="buttonLower('Lower End')">Lower</div>
