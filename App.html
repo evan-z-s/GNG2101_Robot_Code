@@ -2,321 +2,319 @@
 <html>
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <style>
+    	<style>
+			.buttonLight{
+				position: absolute;
+				width: 150px;
+				height: 80px;
+				left: 139px;
+				top: 19px;
+				box-sizing: border-box;
+				background: rgba(250, 7, 7, 0.8);
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 20px;
+				opacity: 0.8;
+				font-family: Verdana, sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 40px;
+				line-height: 77px;
+				text-align: center;
+				color: #000000;
+			}
 
-		.buttonLight{
-			position: absolute;
-			width: 150px;
-			height: 80px;
-			left: 139px;
-			top: 19px;
-			box-sizing: border-box;
-			background: rgba(250, 7, 7, 0.8);
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-			border-radius: 20px;
-			opacity: 0.8;
-			font-family: Verdana, sans-serif;
-			font-style: normal;
-			font-weight: 400;
-			font-size: 40px;
-			line-height: 77px;
-			text-align: center;
-			color: #000000;
-		}
+			.buttonLight:hover{
+				background: rgba(27, 7, 250, 0.8);
+			}
 
-		.buttonLight:hover{
-			background: rgba(27, 7, 250, 0.8);
-		}
+			.buttonOpenClose{
+				position: absolute;
+				width: 280px;
+				height: 80px;
+				left: 74px;
+				bottom: 356px;
+				box-sizing: border-box;
+				background: rgba(250, 7, 7, 0.8);
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 20px;
+				opacity: 0.8;
+				font-family: Verdana, sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 40px;
+				line-height: 77px;
+				text-align: center;
+				color: #000000;
+			}
 
-		.buttonOpenClose{
-			position: absolute;
-			width: 280px;
-			height: 80px;
-			left: 74px;
-			bottom: 356px;
-			box-sizing: border-box;
-			background: rgba(250, 7, 7, 0.8);
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-			border-radius: 20px;
-			opacity: 0.8;
-			font-family: Verdana, sans-serif;
-			font-style: normal;
-			font-weight: 400;
-			font-size: 40px;
-			line-height: 77px;
-			text-align: center;
-			color: #000000;
-		}
+			.buttonOpenClose:hover{
+				background: rgba(27, 7, 250, 0.8);
+			}
 
-		.buttonOpenClose:hover{
-			background: rgba(27, 7, 250, 0.8);
-		}
+			.buttonLower{
+				position: absolute;
+				width: 150px;
+				height: 80px;
+				left: 28px;
+				bottom: 256px;
+				box-sizing: border-box;
+				background: rgba(250, 7, 7, 0.8);
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 20px;
+				opacity: 0.8;
+				font-family: Verdana, sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 40px;
+				line-height: 77px;
+				text-align: center;
+				color: #000000;
+			}
 
-		.buttonLower{
-			position: absolute;
-			width: 150px;
-			height: 80px;
-			left: 28px;
-			bottom: 256px;
-			box-sizing: border-box;
-			background: rgba(250, 7, 7, 0.8);
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-			border-radius: 20px;
-			opacity: 0.8;
-			font-family: Verdana, sans-serif;
-			font-style: normal;
-			font-weight: 400;
-			font-size: 40px;
-			line-height: 77px;
-			text-align: center;
-			color: #000000;
-		}
+			.buttonLower:hover{
+				background: rgba(27, 7, 250, 0.8);
+			}
 
-		.buttonLower:hover{
-			background: rgba(27, 7, 250, 0.8);
-		}
+			.buttonHigher{
+				position: absolute;
+				width: 150px;
+				height: 80px;
+				left: 250px;
+				bottom: 256px;
+				box-sizing: border-box;
+				background: rgba(250, 7, 7, 0.8);
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 20px;
+				opacity: 0.8;
+				font-family: Verdana, sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 40px;
+				line-height: 77px;
+				text-align: center;
+				color: #000000;
+			}
 
-		.buttonHigher{
-			position: absolute;
-			width: 150px;
-			height: 80px;
-			left: 250px;
-			bottom: 256px;
-			box-sizing: border-box;
-			background: rgba(250, 7, 7, 0.8);
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-			border-radius: 20px;
-			opacity: 0.8;
-			font-family: Verdana, sans-serif;
-			font-style: normal;
-			font-weight: 400;
-			font-size: 40px;
-			line-height: 77px;
-			text-align: center;
-			color: #000000;
-		}
+			.buttonHigher:hover{
+				background: rgba(27, 7, 250, 0.8);
+			}
 
-		.buttonHigher:hover{
-			background: rgba(27, 7, 250, 0.8);
-		}
+			.buttonUp{
+				position: absolute;
+				width: 85px;
+				height: 85px;
+				left: 174px;
+				bottom: 161px;
+				box-sizing: border-box;
+				background: rgba(250, 7, 7, 0.8);
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 20px;
+				opacity: 0.8;
+				font-family: Verdana, sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 40px;
+				line-height: 77px;
+				text-align: center;
+				color: #000000;
+				transform: rotate(-45deg);
 
-		.buttonUp{
-			position: absolute;
-			width: 85px;
-			height: 85px;
-			left: 174px;
-			bottom: 161px;
-			box-sizing: border-box;
-			background: rgba(250, 7, 7, 0.8);
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-			border-radius: 20px;
-			opacity: 0.8;
-			font-family: Verdana, sans-serif;
-			font-style: normal;
-			font-weight: 400;
-			font-size: 40px;
-			line-height: 77px;
-			text-align: center;
-			color: #000000;
-			transform: rotate(-45deg);
+			}
 
-		}
+			.buttonUp:hover{
+				background: rgba(27, 7, 250, 0.8);
+			}
 
-		.buttonUp:hover{
-			background: rgba(27, 7, 250, 0.8);
-		}
+			.buttonLeft{
+				position: absolute;
+				width: 85px;
+				height: 85px;
+				left: 105px;
+				bottom: 91px;
+				box-sizing: border-box;
+				background: rgba(250, 7, 7, 0.8);
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 20px;
+				opacity: 0.8;
+				font-family: Verdana, sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 40px;
+				line-height: 77px;
+				text-align: center;
+				color: #000000;
+				transform: rotate(-45deg);
 
-		.buttonLeft{
-			position: absolute;
-			width: 85px;
-			height: 85px;
-			left: 105px;
-			bottom: 91px;
-			box-sizing: border-box;
-			background: rgba(250, 7, 7, 0.8);
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-			border-radius: 20px;
-			opacity: 0.8;
-			font-family: Verdana, sans-serif;
-			font-style: normal;
-			font-weight: 400;
-			font-size: 40px;
-			line-height: 77px;
-			text-align: center;
-			color: #000000;
-			transform: rotate(-45deg);
+			}
 
-		}
+			.buttonLeft:hover{
+				background: rgba(27, 7, 250, 0.8);
+			}
 
-		.buttonLeft:hover{
-			background: rgba(27, 7, 250, 0.8);
-		}
+			.buttonRight{
+				position: absolute;
+				width: 85px;
+				height: 85px;
+				left: 242px;
+				bottom: 91px;
+				box-sizing: border-box;
+				background: rgba(250, 7, 7, 0.8);
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 20px;
+				opacity: 0.8;
+				font-family: Verdana, sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 40px;
+				line-height: 77px;
+				text-align: center;
+				color: #000000;
+				transform: rotate(-45deg);
 
-		.buttonRight{
-			position: absolute;
-			width: 85px;
-			height: 85px;
-			left: 242px;
-			bottom: 91px;
-			box-sizing: border-box;
-			background: rgba(250, 7, 7, 0.8);
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-			border-radius: 20px;
-			opacity: 0.8;
-			font-family: Verdana, sans-serif;
-			font-style: normal;
-			font-weight: 400;
-			font-size: 40px;
-			line-height: 77px;
-			text-align: center;
-			color: #000000;
-			transform: rotate(-45deg);
+			}
 
-		}
+			.buttonRight:hover{
+				background: rgba(27, 7, 250, 0.8);
+			}
 
-		.buttonRight:hover{
-			background: rgba(27, 7, 250, 0.8);
-		}
+			.buttonDown{
+				position: absolute;
+				width: 85px;
+				height: 85px;
+				left: 174px;
+				bottom: 20px;
+				box-sizing: border-box;
+				background: rgba(250, 7, 7, 0.8);
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 20px;
+				opacity: 0.8;
+				font-family: Verdana, sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 40px;
+				line-height: 77px;
+				text-align: center;
+				color: #000000;
+				transform: rotate(-45deg);
 
-		.buttonDown{
-			position: absolute;
-			width: 85px;
-			height: 85px;
-			left: 174px;
-			bottom: 20px;
-			box-sizing: border-box;
-			background: rgba(250, 7, 7, 0.8);
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-			border-radius: 20px;
-			opacity: 0.8;
-			font-family: Verdana, sans-serif;
-			font-style: normal;
-			font-weight: 400;
-			font-size: 40px;
-			line-height: 77px;
-			text-align: center;
-			color: #000000;
-			transform: rotate(-45deg);
+			}
 
-		}
+			.buttonDown:hover{
+				background: rgba(27, 7, 250, 0.8);
+			}
 
-		.buttonDown:hover{
-			background: rgba(27, 7, 250, 0.8);
-		}
+			.container {
+				position: relative;
+				width: 100%;
+			}
+    	</style>
+	</head>
 
-		.container {
-			position: relative;
-			width: 100%;
-		}
+	<body style="overflow: hidden;margin:auto">
+		<div class="container">
+			<div class="buttonLight" id="buttonLight" ontouchstart="buttonLight()">Light</div>
+			<div class="buttonOpenClose" ontouchstart="buttonOpenClose('Open/Close Start')" ontouchend="buttonOpenClose('Open/Close End')">Open/Close</div>
+			<div class="buttonLower" ontouchstart="buttonLower('Lower Start')" ontouchend="buttonLower('Lower End')">Lower</div>
+			<div class="buttonHigher" ontouchstart="buttonHigher('Higher Start')" ontouchend="buttonHigher('Higher End')">Higher</div>
+			<div class="buttonUp" ontouchstart="buttonUp('Up Start')" ontouchend="buttonUp('Up End')"><img src="Arrow.png" style="width: 60%;transform: rotate(45deg);margin-top: 21px;margin-left: 10px;"></div>
+			<div class="buttonLeft" ontouchstart="buttonLeft('Left Start')" ontouchend="buttonLeft('Left End')"><img src="Arrow.png" style="width: 60%;transform: rotate(-45deg);margin-top: 10px;margin-left: -4px;"></div>
+			<div class="buttonRight" ontouchstart="buttonRight('Right Start')" ontouchend="buttonRight('Right End')"><img src="Arrow.png" style="width: 60%;transform: rotate(135deg);margin-top: 29px;margin-left: 8px;"></div>
+			<div class="buttonDown" ontouchstart="buttonDown('Down Start')" ontouchend="buttonDown('Down End')"><img src="Arrow.png" style="width: 60%;transform: rotate(225deg);margin-top: 26px;margin-left: -2px;"></div>
+			<img src="./scientific-lab-robotic-arm-pov-free-video.jpg" alt="RobotPhoto" style="height:100%">
+		</div>
 
-    </style>
-  
-  	</head>
-		<body style="overflow: hidden;margin:auto">
-			<div class="container">
-				<div class="buttonLight" id="buttonLight" ontouchstart="buttonLight()">Light</div>
-				<div class="buttonOpenClose" ontouchstart="buttonOpenClose('Open/Close Start')" ontouchend="buttonOpenClose('Open/Close End')">Open/Close</div>
-				<div class="buttonLower" ontouchstart="buttonLower('Lower Start')" ontouchend="buttonLower('Lower End')">Lower</div>
-				<div class="buttonHigher" ontouchstart="buttonHigher('Higher Start')" ontouchend="buttonHigher('Higher End')">Higher</div>
-				<div class="buttonUp" ontouchstart="buttonUp('Up Start')" ontouchend="buttonUp('Up End')"><img src="Arrow.png" style="width: 60%;transform: rotate(45deg);margin-top: 21px;margin-left: 10px;"></div>
-				<div class="buttonLeft" ontouchstart="buttonLeft('Left Start')" ontouchend="buttonLeft('Left End')"><img src="Arrow.png" style="width: 60%;transform: rotate(-45deg);margin-top: 10px;margin-left: -4px;"></div>
-				<div class="buttonRight" ontouchstart="buttonRight('Right Start')" ontouchend="buttonRight('Right End')"><img src="Arrow.png" style="width: 60%;transform: rotate(135deg);margin-top: 29px;margin-left: 8px;"></div>
-				<div class="buttonDown" ontouchstart="buttonDown('Down Start')" ontouchend="buttonDown('Down End')"><img src="Arrow.png" style="width: 60%;transform: rotate(225deg);margin-top: 26px;margin-left: -2px;"></div>
-				<img src="scientific-lab-robotic-arm-pov-free-video.jpg" alt="RobotPhoto" style="height:200%">
-			</div>
-
-			<script>
-					var counter = 0;
-					function buttonLight() {
-						if(counter == 0){
-							counter = 1;
-							document.getElementById("buttonLight").style.background = "#1b07facc";
-						}
-						else{
-							counter = 0;
-							document.getElementById("buttonLight").style.background = "#fa0707cc";
-						}
-						console.log(status);
-
+		<script>
+				var counter = 0;
+				function buttonLight() {
+					if(counter == 0){
+						counter = 1;
+						document.getElementById("buttonLight").style.background = "#1b07facc";
 					}
-
-					function buttonOpenClose(status) {
-						console.log(status);
+					else{
+						counter = 0;
+						document.getElementById("buttonLight").style.background = "#fa0707cc";
 					}
+					console.log(status);
 
-					function buttonLower(status) {
-						console.log(status);
-					}
+				}
 
-					function buttonHigher(status) {
-						console.log(status);
-					}
+				function buttonOpenClose(status) {
+					console.log(status);
+				}
 
-					function buttonUp(status) {
-						console.log(status);
-					}
+				function buttonLower(status) {
+					console.log(status);
+				}
 
-					function buttonLeft(status) {
-						console.log(status);
-					}
+				function buttonHigher(status) {
+					console.log(status);
+				}
 
-					function buttonRight(status) {
-						console.log(status);
-					}
+				function buttonUp(status) {
+					console.log(status);
+				}
 
-					function buttonDown(status) {
-						console.log(status);
-					}
+				function buttonLeft(status) {
+					console.log(status);
+				}
+
+				function buttonRight(status) {
+					console.log(status);
+				}
+
+				function buttonDown(status) {
+					console.log(status);
+				}
 
 
-				/*  var webSocketCameraUrl = "ws:\/\/" + window.location.hostname + "/Camera";
-					var webSocketCarInputUrl = "ws:\/\/" + window.location.hostname + "/CarInput";      
-					var websocketCamera;
-					var websocketCarInput;
-					
-					function initCameraWebSocket() 
+			/*  var webSocketCameraUrl = "ws:\/\/" + window.location.hostname + "/Camera";
+				var webSocketCarInputUrl = "ws:\/\/" + window.location.hostname + "/CarInput";      
+				var websocketCamera;
+				var websocketCarInput;
+				
+				function initCameraWebSocket() 
+				{
+					websocketCamera = new WebSocket(webSocketCameraUrl);
+					websocketCamera.binaryType = 'blob';
+					websocketCamera.onopen    = function(event){};
+					websocketCamera.onclose   = function(event){setTimeout(initCameraWebSocket, 2000);};
+					websocketCamera.onmessage = function(event)
 					{
-						websocketCamera = new WebSocket(webSocketCameraUrl);
-						websocketCamera.binaryType = 'blob';
-						websocketCamera.onopen    = function(event){};
-						websocketCamera.onclose   = function(event){setTimeout(initCameraWebSocket, 2000);};
-						websocketCamera.onmessage = function(event)
-						{
-						var imageId = document.getElementById("cameraImage");
-						imageId.src = URL.createObjectURL(event.data);
-						};
-					}
-					
-					function initCarInputWebSocket() 
+					var imageId = document.getElementById("cameraImage");
+					imageId.src = URL.createObjectURL(event.data);
+					};
+				}
+				
+				function initCarInputWebSocket() 
+				{
+					websocketCarInput = new WebSocket(webSocketCarInputUrl);
+					websocketCarInput.onopen    = function(event)
 					{
-						websocketCarInput = new WebSocket(webSocketCarInputUrl);
-						websocketCarInput.onopen    = function(event)
-						{
-						sendButtonInput("Speed", document.getElementById("Speed").value);
-						sendButtonInput("Light", document.getElementById("Light").value);
-						sendButtonInput("Pan", document.getElementById("Pan").value);
-						sendButtonInput("Tilt", document.getElementById("Tilt").value);                    
-						};
-						websocketCarInput.onclose   = function(event){setTimeout(initCarInputWebSocket, 2000);};
-						websocketCarInput.onmessage = function(event){};        
-					}
-					
-					function initWebSocket() 
-					{
-						initCameraWebSocket ();
-						initCarInputWebSocket();
-					}
-					function sendButtonInput(key, value) 
-					{
-						var data = key + "," + value;
-						websocketCarInput.send(data);
-					}
-					
-					window.onload = initWebSocket;
-					document.getElementById("mainTable").addEventListener("touchend", function(event){
-						event.preventDefault()
-					});      
-				*/
-			</script>
-  	</body>    
+					sendButtonInput("Speed", document.getElementById("Speed").value);
+					sendButtonInput("Light", document.getElementById("Light").value);
+					sendButtonInput("Pan", document.getElementById("Pan").value);
+					sendButtonInput("Tilt", document.getElementById("Tilt").value);                    
+					};
+					websocketCarInput.onclose   = function(event){setTimeout(initCarInputWebSocket, 2000);};
+					websocketCarInput.onmessage = function(event){};        
+				}
+				
+				function initWebSocket() 
+				{
+					initCameraWebSocket ();
+					initCarInputWebSocket();
+				}
+				function sendButtonInput(key, value) 
+				{
+					var data = key + "," + value;
+					websocketCarInput.send(data);
+				}
+				
+				window.onload = initWebSocket;
+				document.getElementById("mainTable").addEventListener("touchend", function(event){
+					event.preventDefault()
+				});      
+			*/
+		</script>
+	</body>    
 </html>
