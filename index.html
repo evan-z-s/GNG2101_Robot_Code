@@ -57,6 +57,7 @@
 					line-height: 77px;
 					text-align: center;
 					color: #000000;
+					content: "Open/Close";
 				}
 
 				.buttonOpenClose:hover{
@@ -281,6 +282,7 @@
 					line-height: 77px;
 					text-align: center;
 					color: #000000;
+					content: "Claw";
 				}
 
 				.buttonOpenClose:hover{
@@ -482,7 +484,7 @@
 			}
 
 			window.addEventListener("load", (event) => {
-				changeOpenCloseName(window.matchMedia("(orientation: portrait)").matches);
+				changeOpenCloseName();
 			});
 
 			screen.orientation.addEventListener("change", function(e) {
@@ -490,10 +492,6 @@
 					buttonLight(true);
 					changeOpenCloseName();
 				}, 100);
-
-				setTimeout(() => {
-					changeOpenCloseName();
-				}, 5000);
 			});
 
 			var lightOn = false;
