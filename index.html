@@ -222,9 +222,9 @@
 	</head>
 
 	<body style="overflow: hidden;margin:auto">
-		<div class=" noselect">
+		<div class="container noselect">
 			<div class="buttonLight" id="buttonLight" ontouchstart="buttonLight()">Light</div>
-			<div class="buttonOpenClose" ontouchstart="buttonOpenClose('Open/Close Start')" ontouchend="buttonOpenClose('Open/Close End')">Open/Close</div>
+			<div class="buttonOpenClose" ontouchstart="buttonOpenClose('Open/Close Start')" ontouchend="buttonOpenClose('Open/Close End')" ontouchcancel="buttonOpenClose('Open/Close End')">Open/Close</div>
 			<div class="buttonLower" ontouchstart="buttonLower('Lower Start')"  ontouchend="buttonLower('Lower End')">Lower</div>
 			<div class="buttonHigher" ontouchstart="buttonHigher('Higher Start')" ontouchend="buttonHigher('Higher End')">Higher</div>
 			<div class="buttonUp" ontouchstart="buttonUp('Up Start')" ontouchend="buttonUp('Up End')"><img src="./Arrow.png" style="width: 60%;transform: rotate(45deg);margin-top: 21px;margin-left: 10px;user-select: none;"></div>
