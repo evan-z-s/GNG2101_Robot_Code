@@ -472,24 +472,28 @@
 		</div>
 
 		<script>
-			function changeOpenCloseName(fromLoad, inPortrait){
-				if(inPortrait == true){
+			function changeOpenCloseName(){
+				if(window.matchMedia("(orientation: portrait)").matches){
 					document.getElementById("buttonOpenClose").textContent = "Open/Close";
 				}
-				else if(inPortrait == false){
+				else{
 					document.getElementById("buttonOpenClose").textContent = "Claw";
 				}
 			}
 
 			window.addEventListener("load", (event) => {
-				changeOpenCloseName(true, window.matchMedia("(orientation: portrait)").matches);
+				changeOpenCloseName(window.matchMedia("(orientation: portrait)").matches);
 			});
 
 			screen.orientation.addEventListener("change", function(e) {
 				setTimeout(() => {
 					buttonLight(true);
-					changeOpenCloseName(false, window.matchMedia("(orientation: portrait)").matches);
+					changeOpenCloseName();
 				}, 100);
+
+				setTimeout(() => {
+					changeOpenCloseName();
+				}, 5000);
 			});
 
 			var lightOn = false;
