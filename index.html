@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta name="viewport" content="height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     	<style>
 			.noselect {
       			-webkit-touch-callout: none; /* iOS Safari */
@@ -12,7 +12,6 @@
                 user-select: none; /* Non-prefixed version, currently
                                       supported by Chrome and Opera */
 				-webkit-user-drag: none;
-				pointer-events: none;
 
     		}	
 			.buttonLight{
@@ -228,11 +227,11 @@
 			<div class="buttonOpenClose" ontouchstart="buttonOpenClose('Open/Close Start')" ontouchend="buttonOpenClose('Open/Close End')">Open/Close</div>
 			<div class="buttonLower" ontouchstart="buttonLower('Lower Start')"  ontouchend="buttonLower('Lower End')">Lower</div>
 			<div class="buttonHigher" ontouchstart="buttonHigher('Higher Start')" ontouchend="buttonHigher('Higher End')">Higher</div>
-			<div class="buttonUp" ontouchstart="buttonUp('Up Start')" ontouchend="buttonUp('Up End')"><img src="./Arrow.png" style="width: 60%;transform: rotate(45deg);margin-top: 21px;margin-left: 10px;user-select: none;"></div>
-			<div class="buttonLeft" ontouchstart="buttonLeft('Left Start')" ontouchend="buttonLeft('Left End')"><img src="./Arrow.png" style="width: 60%;transform: rotate(-45deg);margin-top: 10px;margin-left: -4px;user-select: none;"></div>
-			<div class="buttonRight" ontouchstart="buttonRight('Right Start')" ontouchend="buttonRight('Right End')"><img src="./Arrow.png" style="width: 60%;transform: rotate(135deg);margin-top: 29px;margin-left: 8px;user-select: none;"></div>
-			<div class="buttonDown" ontouchstart="buttonDown('Down Start')" ontouchend="buttonDown('Down End')"><img src="./Arrow.png" style="width: 60%;transform: rotate(225deg);margin-top: 26px;margin-left: -2px;user-select: none;"></div>
-			<img src="./scientific-lab-robotic-arm-pov-free-video.jpg" alt="RobotPhoto" style="height:100%; -webkit-touch-callout: none;">
+			<div class="buttonUp" ontouchstart="buttonUp('Up Start')" ontouchend="buttonUp('Up End')"><img src="./Arrow.png" style="pointer-events: none; width: 60%;transform: rotate(45deg);margin-top: 21px;margin-left: 10px;user-select: none;"></div>
+			<div class="buttonLeft" ontouchstart="buttonLeft('Left Start')" ontouchend="buttonLeft('Left End')"><img src="./Arrow.png" style="pointer-events: none; width: 60%;transform: rotate(-45deg);margin-top: 10px;margin-left: -4px;user-select: none;"></div>
+			<div class="buttonRight" ontouchstart="buttonRight('Right Start')" ontouchend="buttonRight('Right End')"><img src="./Arrow.png" style="pointer-events: none;width: 60%;transform: rotate(135deg);margin-top: 29px;margin-left: 8px;user-select: none;"></div>
+			<div class="buttonDown" ontouchstart="buttonDown('Down Start')" ontouchend="buttonDown('Down End')"><img src="./Arrow.png" style="pointer-events: none;width: 60%;transform: rotate(225deg);margin-top: 26px;margin-left: -2px;user-select: none;"></div>
+			<img src="./scientific-lab-robotic-arm-pov-free-video.jpg" alt="RobotPhoto" style="pointer-events: none;height:100%; -webkit-touch-callout: none;">
 		</div>
 
 		<script>
