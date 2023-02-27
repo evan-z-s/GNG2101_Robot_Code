@@ -3,220 +3,440 @@
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     	<style>
-			.noselect {
-      			-webkit-touch-callout: none; /* iOS Safari */
-       	 		-webkit-user-select: none; /* Safari */
-         		-khtml-user-select: none; /* Konqueror HTML */
-           		-moz-user-select: none; /* Firefox */
-            	-ms-user-select: none; /* Internet Explorer/Edge */
-                user-select: none; /* Non-prefixed version, currently
-                                      supported by Chrome and Opera */
-				-webkit-user-drag: none;
+			@media screen and (orientation: portrait) {
+				.noselect {
+					-webkit-touch-callout: none; /* iOS Safari */
+					-webkit-user-select: none; /* Safari */
+					-khtml-user-select: none; /* Konqueror HTML */
+					-moz-user-select: none; /* Firefox */
+					-ms-user-select: none; /* Internet Explorer/Edge */
+					user-select: none; /* Non-prefixed version, currently
+										supported by Chrome and Opera */
+					-webkit-user-drag: none;
 
-    		}	
-			.buttonLight{
-				position: fixed;
-				width: 150px;
-				height: 80px;
-				left: 139px;
-				top: 19px;
-				box-sizing: border-box;
-				background: rgba(250, 7, 7, 0.8);
-				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-				border-radius: 20px;
-				opacity: 0.8;
-				font-family: Verdana, sans-serif;
-				font-style: normal;
-				font-weight: 400;
-				font-size: 40px;
-				line-height: 77px;
-				text-align: center;
-				color: #000000;
+				}	
+				.buttonLight{
+					position: fixed;
+					width: 150px;
+					height: 80px;
+					left: 139px;
+					top: 19px;
+					box-sizing: border-box;
+					background: rgba(250, 7, 7, 0.8);
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 20px;
+					opacity: 0.8;
+					font-family: Verdana, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 77px;
+					text-align: center;
+					color: #000000;
+				}
+
+				.buttonLight:hover{
+					background: rgba(27, 7, 250, 0.8);
+				}
+
+				.buttonOpenClose{
+					position: fixed;
+					width: 280px;
+					height: 80px;
+					left: 74px;
+					bottom: 356px;
+					box-sizing: border-box;
+					background: rgba(250, 7, 7, 0.8);
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 20px;
+					opacity: 0.8;
+					font-family: Verdana, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 77px;
+					text-align: center;
+					color: #000000;
+				}
+
+				.buttonOpenClose:hover{
+					background: rgba(27, 7, 250, 0.8);
+				}
+
+				.buttonLower{
+					position: fixed;
+					width: 150px;
+					height: 80px;
+					left: 28px;
+					bottom: 256px;
+					box-sizing: border-box;
+					background: rgba(250, 7, 7, 0.8);
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 20px;
+					opacity: 0.8;
+					font-family: Verdana, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 77px;
+					text-align: center;
+					color: #000000;
+				}
+
+				.buttonLower:hover{
+					background: rgba(27, 7, 250, 0.8);
+				}
+
+				.buttonHigher{
+					position: fixed;
+					width: 150px;
+					height: 80px;
+					left: 250px;
+					bottom: 256px;
+					box-sizing: border-box;
+					background: rgba(250, 7, 7, 0.8);
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 20px;
+					opacity: 0.8;
+					font-family: Verdana, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 77px;
+					text-align: center;
+					color: #000000;
+				}
+
+				.buttonHigher:hover{
+					background: rgba(27, 7, 250, 0.8);
+				}
+
+				.buttonUp{
+					position: fixed;
+					width: 85px;
+					height: 85px;
+					left: 174px;
+					bottom: 161px;
+					box-sizing: border-box;
+					background: rgba(250, 7, 7, 0.8);
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 20px;
+					opacity: 0.8;
+					font-family: Verdana, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 77px;
+					text-align: center;
+					color: #000000;
+					transform: rotate(-45deg);
+
+				}
+
+				.buttonUp:hover{
+					background: rgba(27, 7, 250, 0.8);
+				}
+
+				.buttonLeft{
+					position: fixed;
+					width: 85px;
+					height: 85px;
+					left: 105px;
+					bottom: 91px;
+					box-sizing: border-box;
+					background: rgba(250, 7, 7, 0.8);
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 20px;
+					opacity: 0.8;
+					font-family: Verdana, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 77px;
+					text-align: center;
+					color: #000000;
+					transform: rotate(-45deg);
+
+				}
+
+				.buttonLeft:hover{
+					background: rgba(27, 7, 250, 0.8);
+				}
+
+				.buttonRight{
+					position: fixed;
+					width: 85px;
+					height: 85px;
+					left: 242px;
+					bottom: 91px;
+					box-sizing: border-box;
+					background: rgba(250, 7, 7, 0.8);
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 20px;
+					opacity: 0.8;
+					font-family: Verdana, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 77px;
+					text-align: center;
+					color: #000000;
+					transform: rotate(-45deg);
+
+				}
+
+				.buttonRight:hover{
+					background: rgba(27, 7, 250, 0.8);
+				}
+
+				.buttonDown{
+					position: fixed;
+					width: 85px;
+					height: 85px;
+					left: 174px;
+					bottom: 20px;
+					box-sizing: border-box;
+					background: rgba(250, 7, 7, 0.8);
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 20px;
+					opacity: 0.8;
+					font-family: Verdana, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 77px;
+					text-align: center;
+					color: #000000;
+					transform: rotate(-45deg);
+
+				}
+
+				.buttonDown:hover{
+					background: rgba(27, 7, 250, 0.8);
+				}
+
+				.container {
+					position: relative;
+					width: 100%;
+				}
 			}
+			
+			@media screen and (orientation: landscape) {
+				.noselect {
+					-webkit-touch-callout: none; /* iOS Safari */
+					-webkit-user-select: none; /* Safari */
+					-khtml-user-select: none; /* Konqueror HTML */
+					-moz-user-select: none; /* Firefox */
+					-ms-user-select: none; /* Internet Explorer/Edge */
+					user-select: none; /* Non-prefixed version, currently
+										supported by Chrome and Opera */
+					-webkit-user-drag: none;
 
-			.buttonLight:hover{
-				background: rgba(27, 7, 250, 0.8);
-			}
+				}	
+				.buttonLight{
+					position: fixed;
+					width: 150px;
+					height: 80px;
+					left: 139px;
+					top: 19px;
+					box-sizing: border-box;
+					background: rgba(250, 7, 7, 0.8);
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 20px;
+					opacity: 0.8;
+					font-family: Verdana, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 77px;
+					text-align: center;
+					color: #000000;
+				}
 
-			.buttonOpenClose{
-				position: fixed;
-				width: 280px;
-				height: 80px;
-				left: 74px;
-				bottom: 356px;
-				box-sizing: border-box;
-				background: rgba(250, 7, 7, 0.8);
-				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-				border-radius: 20px;
-				opacity: 0.8;
-				font-family: Verdana, sans-serif;
-				font-style: normal;
-				font-weight: 400;
-				font-size: 40px;
-				line-height: 77px;
-				text-align: center;
-				color: #000000;
-			}
+				.buttonLight:hover{
+					background: rgba(27, 7, 250, 0.8);
+				}
 
-			.buttonOpenClose:hover{
-				background: rgba(27, 7, 250, 0.8);
-			}
+				.buttonOpenClose{
+					position: fixed;
+					width: 280px;
+					height: 80px;
+					left: 74px;
+					bottom: 356px;
+					box-sizing: border-box;
+					background: rgba(250, 7, 7, 0.8);
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 20px;
+					opacity: 0.8;
+					font-family: Verdana, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 77px;
+					text-align: center;
+					color: #000000;
+				}
 
-			.buttonLower{
-				position: fixed;
-				width: 150px;
-				height: 80px;
-				left: 28px;
-				bottom: 256px;
-				box-sizing: border-box;
-				background: rgba(250, 7, 7, 0.8);
-				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-				border-radius: 20px;
-				opacity: 0.8;
-				font-family: Verdana, sans-serif;
-				font-style: normal;
-				font-weight: 400;
-				font-size: 40px;
-				line-height: 77px;
-				text-align: center;
-				color: #000000;
-			}
+				.buttonOpenClose:hover{
+					background: rgba(27, 7, 250, 0.8);
+				}
 
-			.buttonLower:hover{
-				background: rgba(27, 7, 250, 0.8);
-			}
+				.buttonLower{
+					position: fixed;
+					width: 150px;
+					height: 80px;
+					left: 28px;
+					bottom: 256px;
+					box-sizing: border-box;
+					background: rgba(250, 7, 7, 0.8);
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 20px;
+					opacity: 0.8;
+					font-family: Verdana, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 77px;
+					text-align: center;
+					color: #000000;
+				}
 
-			.buttonHigher{
-				position: fixed;
-				width: 150px;
-				height: 80px;
-				left: 250px;
-				bottom: 256px;
-				box-sizing: border-box;
-				background: rgba(250, 7, 7, 0.8);
-				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-				border-radius: 20px;
-				opacity: 0.8;
-				font-family: Verdana, sans-serif;
-				font-style: normal;
-				font-weight: 400;
-				font-size: 40px;
-				line-height: 77px;
-				text-align: center;
-				color: #000000;
-			}
+				.buttonLower:hover{
+					background: rgba(27, 7, 250, 0.8);
+				}
 
-			.buttonHigher:hover{
-				background: rgba(27, 7, 250, 0.8);
-			}
+				.buttonHigher{
+					position: fixed;
+					width: 150px;
+					height: 80px;
+					left: 250px;
+					bottom: 256px;
+					box-sizing: border-box;
+					background: rgba(250, 7, 7, 0.8);
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 20px;
+					opacity: 0.8;
+					font-family: Verdana, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 77px;
+					text-align: center;
+					color: #000000;
+				}
 
-			.buttonUp{
-				position: fixed;
-				width: 85px;
-				height: 85px;
-				left: 174px;
-				bottom: 161px;
-				box-sizing: border-box;
-				background: rgba(250, 7, 7, 0.8);
-				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-				border-radius: 20px;
-				opacity: 0.8;
-				font-family: Verdana, sans-serif;
-				font-style: normal;
-				font-weight: 400;
-				font-size: 40px;
-				line-height: 77px;
-				text-align: center;
-				color: #000000;
-				transform: rotate(-45deg);
+				.buttonHigher:hover{
+					background: rgba(27, 7, 250, 0.8);
+				}
 
-			}
+				.buttonUp{
+					position: fixed;
+					width: 85px;
+					height: 85px;
+					left: 174px;
+					bottom: 161px;
+					box-sizing: border-box;
+					background: rgba(250, 7, 7, 0.8);
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 20px;
+					opacity: 0.8;
+					font-family: Verdana, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 77px;
+					text-align: center;
+					color: #000000;
+					transform: rotate(-45deg);
 
-			.buttonUp:hover{
-				background: rgba(27, 7, 250, 0.8);
-			}
+				}
 
-			.buttonLeft{
-				position: fixed;
-				width: 85px;
-				height: 85px;
-				left: 105px;
-				bottom: 91px;
-				box-sizing: border-box;
-				background: rgba(250, 7, 7, 0.8);
-				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-				border-radius: 20px;
-				opacity: 0.8;
-				font-family: Verdana, sans-serif;
-				font-style: normal;
-				font-weight: 400;
-				font-size: 40px;
-				line-height: 77px;
-				text-align: center;
-				color: #000000;
-				transform: rotate(-45deg);
+				.buttonUp:hover{
+					background: rgba(27, 7, 250, 0.8);
+				}
 
-			}
+				.buttonLeft{
+					position: fixed;
+					width: 85px;
+					height: 85px;
+					left: 105px;
+					bottom: 91px;
+					box-sizing: border-box;
+					background: rgba(250, 7, 7, 0.8);
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 20px;
+					opacity: 0.8;
+					font-family: Verdana, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 77px;
+					text-align: center;
+					color: #000000;
+					transform: rotate(-45deg);
 
-			.buttonLeft:hover{
-				background: rgba(27, 7, 250, 0.8);
-			}
+				}
 
-			.buttonRight{
-				position: fixed;
-				width: 85px;
-				height: 85px;
-				left: 242px;
-				bottom: 91px;
-				box-sizing: border-box;
-				background: rgba(250, 7, 7, 0.8);
-				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-				border-radius: 20px;
-				opacity: 0.8;
-				font-family: Verdana, sans-serif;
-				font-style: normal;
-				font-weight: 400;
-				font-size: 40px;
-				line-height: 77px;
-				text-align: center;
-				color: #000000;
-				transform: rotate(-45deg);
+				.buttonLeft:hover{
+					background: rgba(27, 7, 250, 0.8);
+				}
 
-			}
+				.buttonRight{
+					position: fixed;
+					width: 85px;
+					height: 85px;
+					left: 242px;
+					bottom: 91px;
+					box-sizing: border-box;
+					background: rgba(250, 7, 7, 0.8);
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 20px;
+					opacity: 0.8;
+					font-family: Verdana, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 77px;
+					text-align: center;
+					color: #000000;
+					transform: rotate(-45deg);
 
-			.buttonRight:hover{
-				background: rgba(27, 7, 250, 0.8);
-			}
+				}
 
-			.buttonDown{
-				position: fixed;
-				width: 85px;
-				height: 85px;
-				left: 174px;
-				bottom: 20px;
-				box-sizing: border-box;
-				background: rgba(250, 7, 7, 0.8);
-				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-				border-radius: 20px;
-				opacity: 0.8;
-				font-family: Verdana, sans-serif;
-				font-style: normal;
-				font-weight: 400;
-				font-size: 40px;
-				line-height: 77px;
-				text-align: center;
-				color: #000000;
-				transform: rotate(-45deg);
+				.buttonRight:hover{
+					background: rgba(27, 7, 250, 0.8);
+				}
 
-			}
+				.buttonDown{
+					position: fixed;
+					width: 85px;
+					height: 85px;
+					left: 174px;
+					bottom: 20px;
+					box-sizing: border-box;
+					background: rgba(250, 7, 7, 0.8);
+					box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+					border-radius: 20px;
+					opacity: 0.8;
+					font-family: Verdana, sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 40px;
+					line-height: 77px;
+					text-align: center;
+					color: #000000;
+					transform: rotate(-45deg);
 
-			.buttonDown:hover{
-				background: rgba(27, 7, 250, 0.8);
-			}
+				}
 
-			.container {
-				position: relative;
-				width: 100%;
+				.buttonDown:hover{
+					background: rgba(27, 7, 250, 0.8);
+				}
+
+				.container {
+					position: relative;
+					width: 100%;
+				}
 			}
     	</style>
 	</head>
