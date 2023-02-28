@@ -35,10 +35,6 @@
 					color: #000000;
 				}
 
-				.buttonLight:hover{
-					background: rgba(250, 7, 7, 0.8);
-				}
-
 				.buttonOpenClose{
 					position: fixed;
 					width: 280px;
@@ -58,10 +54,6 @@
 					text-align: center;
 					color: #000000;
 					content: "Open/Close";
-				}
-
-				.buttonOpenClose:hover{
-					background: rgba(250, 7, 7, 0.8);
 				}
 
 				.buttonLower{
@@ -84,10 +76,6 @@
 					color: #000000;
 				}
 
-				.buttonLower:hover{
-					background: rgba(250, 7, 7, 0.8);
-				}
-
 				.buttonHigher{
 					position: fixed;
 					width: 150px;
@@ -106,10 +94,6 @@
 					line-height: 77px;
 					text-align: center;
 					color: #000000;
-				}
-
-				.buttonHigher:hover{
-					background: rgba(250, 7, 7, 0.8);
 				}
 
 				.buttonUp{
@@ -134,10 +118,6 @@
 
 				}
 
-				.buttonUp:hover{
-					background: rgba(250, 7, 7, 0.8);
-				}
-
 				.buttonLeft{
 					position: fixed;
 					width: 85px;
@@ -158,10 +138,6 @@
 					color: #000000;
 					transform: rotate(-45deg);
 
-				}
-
-				.buttonLeft:hover{
-					background: rgba(250, 7, 7, 0.8);
 				}
 
 				.buttonRight{
@@ -186,10 +162,6 @@
 
 				}
 
-				.buttonRight:hover{
-					background: rgba(250, 7, 7, 0.8);
-				}
-
 				.buttonDown{
 					position: fixed;
 					width: 85px;
@@ -210,10 +182,6 @@
 					color: #000000;
 					transform: rotate(-45deg);
 
-				}
-
-				.buttonDown:hover{
-					background: rgba(250, 7, 7, 0.8);
 				}
 
 				.container {
@@ -260,10 +228,6 @@
 					color: #000000;
 				}
 
-				.buttonLight:hover{
-					background: rgba(27, 7, 250, 0.8);
-				}
-
 				.buttonOpenClose{
 					position: fixed;
 					width: 150px;
@@ -283,10 +247,6 @@
 					text-align: center;
 					color: #000000;
 					content: "Claw";
-				}
-
-				.buttonOpenClose:hover{
-					background: rgba(27, 7, 250, 0.8);
 				}
 
 				.buttonLower{
@@ -309,10 +269,6 @@
 					color: #000000;
 				}
 
-				.buttonLower:hover{
-					background: rgba(27, 7, 250, 0.8);
-				}
-
 				.buttonHigher{
 					position: fixed;
 					width: 150px;
@@ -331,10 +287,6 @@
 					line-height: 77px;
 					text-align: center;
 					color: #000000;
-				}
-
-				.buttonHigher:hover{
-					background: rgba(27, 7, 250, 0.8);
 				}
 
 				.buttonUp{
@@ -359,10 +311,6 @@
 
 				}
 
-				.buttonUp:hover{
-					background: rgba(27, 7, 250, 0.8);
-				}
-
 				.buttonLeft{
 					position: fixed;
 					width: 85px;
@@ -383,10 +331,6 @@
 					color: #000000;
 					transform: rotate(-45deg);
 
-				}
-
-				.buttonLeft:hover{
-					background: rgba(27, 7, 250, 0.8);
 				}
 
 				.buttonRight{
@@ -411,10 +355,6 @@
 
 				}
 
-				.buttonRight:hover{
-					background: rgba(27, 7, 250, 0.8);
-				}
-
 				.buttonDown{
 					position: fixed;
 					width: 85px;
@@ -435,10 +375,6 @@
 					color: #000000;
 					transform: rotate(-45deg);
 
-				}
-
-				.buttonDown:hover{
-					background: rgba(27, 7, 250, 0.8);
 				}
 
 				.container {
@@ -464,17 +400,17 @@
 		<div class="container noselect">
 			<img class="img" src="./scientific-lab-robotic-arm-pov-free-video.jpg" alt="RobotPhoto">
 			<div class="buttonLight" id="buttonLight" ontouchstart="buttonLight(false)">Light</div>
-			<div class="buttonOpenClose" id="buttonOpenClose" ontouchstart="buttonOpenClose('Open/Close Start')" ontouchend="buttonOpenClose('Open/Close End')">Open/Close</div>
-			<div class="buttonLower" ontouchstart="buttonLower('Lower Start')"  ontouchend="buttonLower('Lower End')">Lower</div>
-			<div class="buttonHigher" ontouchstart="buttonHigher('Higher Start')" ontouchend="buttonHigher('Higher End')">Higher</div>
-			<div class="buttonUp" ontouchstart="buttonUp('Up Start')" ontouchend="buttonUp('Up End')"><img src="./Arrow.png" style="pointer-events: none; width: 60%;transform: rotate(45deg);margin-top: 21px;margin-left: 10px;user-select: none;"></div>
-			<div class="buttonLeft" ontouchstart="buttonLeft('Left Start')" ontouchend="buttonLeft('Left End')"><img src="./Arrow.png" style="pointer-events: none; width: 60%;transform: rotate(-45deg);margin-top: 10px;margin-left: -4px;user-select: none;"></div>
-			<div class="buttonRight" ontouchstart="buttonRight('Right Start')" ontouchend="buttonRight('Right End')"><img src="./Arrow.png" style="pointer-events: none;width: 60%;transform: rotate(135deg);margin-top: 29px;margin-left: 8px;user-select: none;"></div>
-			<div class="buttonDown" ontouchstart="buttonDown('Down Start')" ontouchend="buttonDown('Down End')"><img src="./Arrow.png" style="pointer-events: none;width: 60%;transform: rotate(225deg);margin-top: 26px;margin-left: -2px;user-select: none;"></div>
+			<div class="buttonOpenClose" id="buttonOpenClose" ontouchstart="buttonOpenClose(false)">Open/Close</div>
+			<div class="buttonLower" id="buttonLower" ontouchstart="buttonLower(true)" ontouchend="buttonLower(false)">Lower</div>
+			<div class="buttonHigher" id="buttonHigher" ontouchstart="buttonHigher(true)" ontouchend="buttonHigher(false)">Higher</div>
+			<div class="buttonUp" id="buttonUp" ontouchstart="buttonUp(true)" ontouchend="buttonUp(false)"><img src="./Arrow.png" style="pointer-events: none; width: 60%;transform: rotate(45deg);margin-top: 21px;margin-left: 10px;user-select: none;"></div>
+			<div class="buttonLeft" id="buttonLeft" ontouchstart="buttonLeft(true)" ontouchend="buttonLeft(false)"><img src="./Arrow.png" style="pointer-events: none; width: 60%;transform: rotate(-45deg);margin-top: 10px;margin-left: -4px;user-select: none;"></div>
+			<div class="buttonRight" id="buttonRight" ontouchstart="buttonRight(true)" ontouchend="buttonRight(false)"><img src="./Arrow.png" style="pointer-events: none;width: 60%;transform: rotate(135deg);margin-top: 29px;margin-left: 8px;user-select: none;"></div>
+			<div class="buttonDown" id="buttonDown" ontouchstart="buttonDown(true)" ontouchend="buttonDown(false)"><img src="./Arrow.png" style="pointer-events: none;width: 60%;transform: rotate(225deg);margin-top: 26px;margin-left: -2px;user-select: none;"></div>
 		</div>
 
 		<script>
-			function changeOpenCloseName(){
+			function changeOpenCloseNameText(){
 				if(window.matchMedia("(orientation: portrait)").matches){
 					document.getElementById("buttonOpenClose").textContent = "Open/Close";
 				}
@@ -490,80 +426,87 @@
 			screen.orientation.addEventListener("change", function(e) {
 				setTimeout(() => {
 					buttonLight(true);
-					changeOpenCloseName();
+					buttonOpenClose(true);
+					buttonLower(false);
+					buttonHigher(false);
+					buttonUp(false);
+					buttonLeft(false);
+					buttonRight(false);
+					buttownDown(false);
+					changeOpenCloseNameText();
 				}, 100);
 			});
 
-			var lightOn = false;
-			function buttonLight(onlyChangeColor) {
-				if(onlyChangeColor == true){
-					if (window.matchMedia("(orientation: portrait)").matches) {
-						if(lightOn == false){
-							document.getElementById("buttonLight").style.background = "#1b07facc";
-						}
-						else{
-							document.getElementById("buttonLight").style.background = "#fa0707cc";
-						}
+			function changeColor(id,itemOn){
+				var portait = window.matchMedia("(orientation: portrait)").matches;
+				var element = document.getElementById(id);
+				if(portait == true){
+					if(itemOn == true){
+						element.style.background = "#fa0707cc";
 					}
-					else if (window.matchMedia("(orientation: landscape)").matches) {
-						if(lightOn == false){
-							document.getElementById("buttonLight").style.background = "#fa0707cc";
-						}
-						else{
-							document.getElementById("buttonLight").style.background = "#1b07facc";
-						}
+					else{
+						element.style.background = "#1b07facc";
 					}
 				}
 				else{
-					if (window.matchMedia("(orientation: portrait)").matches) {
-						if(lightOn == false){
-							lightOn = true;
-							document.getElementById("buttonLight").style.background = "#fa0707cc";
-						}
-						else{
-							lightOn = false;
-							document.getElementById("buttonLight").style.background = "#1b07facc";
-						}
+					if(itemOn ==true){
+						element.style.background = "#1b07facc";
 					}
-					else if (window.matchMedia("(orientation: landscape)").matches) {
-						if(lightOn == false){
-							lightOn = true;
-							document.getElementById("buttonLight").style.background = "#1b07facc";
-						}
-						else{
-							lightOn = false;
-							document.getElementById("buttonLight").style.background = "#fa0707cc";
-						}
+					else{
+						element.style.background = "#fa0707cc";
 					}
 				}
 			}
 
-			function buttonOpenClose(status) {
-				console.log(status);
+			var buttonLightOn = false;
+			function buttonLight(onlyChangeColor) {
+				if(onlyChangeColor == false){
+					if(buttonLightOn == false){
+						buttonLightOn = true;
+					}
+					else{
+						buttonLightOn = false;
+					}
+				}
+				changeColor("buttonLight", buttonLightOn);
 			}
 
-			function buttonLower(status) {
-				console.log(status);
+			var buttonOpenCloseOn = false;
+			function buttonOpenClose(onlyChangeColor) {
+				console.log("Button Open/Close on: "+buttonOpenCloseOn);
+				if(onlyChangeColor == false){
+					if(buttonOpenCloseOn == false){
+						buttonOpenCloseOn = true;
+					}
+					else{
+						buttonOpenCloseOn = false;
+					}
+				}
+				changeColor("buttonOpenClose", buttonOpenCloseOn);
 			}
 
-			function buttonHigher(status) {
-				console.log(status);
+			function buttonLower(turnOn) {
+				changeColor("buttonLower", turnOn);
 			}
 
-			function buttonUp(status) {
-				console.log(status);
+			function buttonHigher(turnOn) {
+				changeColor("buttonHigher", turnOn);
 			}
 
-			function buttonLeft(status) {
-				console.log(status);
+			function buttonUp(turnOn) {
+				changeColor("buttonUp", turnOn);
 			}
 
-			function buttonRight(status) {
-				console.log(status);
+			function buttonLeft(turnOn) {
+				changeColor("buttonLeft", turnOn);
 			}
 
-			function buttonDown(status) {
-				console.log(status);
+			function buttonRight(turnOn) {
+				changeColor("buttonRight", turnOn);
+			}
+
+			function buttonDown(turnOn) {
+				changeColor("buttonDown", turnOn);
 			}
 
 			document.addEventListener('touchmove', function(event) {
@@ -624,6 +567,26 @@
 				event.preventDefault()
 			});      
 			*/
+
+			// The item (or items) to press and hold on
+			let item = document.getElementById("buttonOpenClose")
+
+			// Listening for the mouse and touch events    
+			item.addEventListener("mousedown", pressingDown, false);
+			item.addEventListener("mouseup", notPressingDown, false);
+			item.addEventListener("mouseleave", notPressingDown, false);
+			item.addEventListener("touchstart", pressingDown, false);
+			item.addEventListener("touchend", notPressingDown, false);
+
+			function pressingDown(e) {
+				// Start the timer
+				console.log("Turn On!");
+			}
+
+			function notPressingDown(e) {
+				// Stop the timer
+				console.log("Turn Off!")
+			}
 		</script>
 	</body>    
 </html>
