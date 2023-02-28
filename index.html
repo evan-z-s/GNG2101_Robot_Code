@@ -400,7 +400,7 @@
 		<div class="container noselect">
 			<img class="img" src="./scientific-lab-robotic-arm-pov-free-video.jpg" alt="RobotPhoto">
 			<div class="buttonLight" id="buttonLight" ontouchstart="buttonLight(false)">Light</div>
-			<div class="buttonOpenClose" id="buttonOpenClose" ontouchstart="buttonOpenClose(false)">Open/Close</div>
+			<div class="buttonOpenClose" id="buttonOpenClose" ontouchstart="buttonOpenClose(false)"></div>
 			<div class="buttonLower" id="buttonLower" ontouchstart="buttonLower(true)" ontouchend="buttonLower(false)">Lower</div>
 			<div class="buttonHigher" id="buttonHigher" ontouchstart="buttonHigher(true)" ontouchend="buttonHigher(false)">Higher</div>
 			<div class="buttonUp" id="buttonUp" ontouchstart="buttonUp(true)" ontouchend="buttonUp(false)"><img src="./Arrow.png" style="pointer-events: none; width: 60%;transform: rotate(45deg);margin-top: 21px;margin-left: 10px;user-select: none;"></div>
@@ -412,15 +412,16 @@
 		<script>
 			function changeOpenCloseNameText(){
 				if(window.matchMedia("(orientation: portrait)").matches){
-					document.getElementById("buttonOpenClose").textContent = "Open/Close";
+					document.getElementById("buttonOpenClose").innerText = "Open/Close";
 				}
 				else{
-					document.getElementById("buttonOpenClose").textContent = "Claw";
+					document.getElementById("buttonOpenClose").innerText = "Claw";
 				}
 			}
 
 			window.addEventListener("load", (event) => {
-				changeOpenCloseName();
+				changeOpenCloseNameText();
+				console.log("Inner HTML: "+document.getElementById("buttonOpenClose").innerHTML);
 			});
 
 			screen.orientation.addEventListener("change", function(e) {
@@ -432,7 +433,7 @@
 					buttonUp(false);
 					buttonLeft(false);
 					buttonRight(false);
-					buttownDown(false);
+					buttonDown(false);
 					changeOpenCloseNameText();
 				}, 100);
 			});
