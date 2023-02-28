@@ -486,28 +486,74 @@
 				changeColor("buttonOpenClose", buttonOpenCloseOn);
 			}
 
+			var buttonLowerOn = false;
 			function buttonLower(turnOn) {
 				changeColor("buttonLower", turnOn);
+				buttonLowerOn = turnOn;
+				checkHigherLower("buttonLower", turnOn);
 			}
 
+			var buttonHigherOn = false;
 			function buttonHigher(turnOn) {
 				changeColor("buttonHigher", turnOn);
+				buttonHigherOn = turnOn;
+				checkHigherLower("buttonHigher", turnOn);
 			}
 
+			var buttonUpOn = false;
 			function buttonUp(turnOn) {
 				changeColor("buttonUp", turnOn);
+				buttonUpOn = turnOn;
+				checkDirectionPad("buttonUp", turnOn);
 			}
 
+			var buttonLeftOn = false;
 			function buttonLeft(turnOn) {
 				changeColor("buttonLeft", turnOn);
+				buttonLeftOn = turnOn;
+				checkDirectionPad("buttonLeft", turnOn);
 			}
 
+			var buttonRightOn = false;
 			function buttonRight(turnOn) {
 				changeColor("buttonRight", turnOn);
+				buttonRightOn = turnOn;
+				checkDirectionPad("buttonRight", turnOn);
 			}
 
+			var buttonDownOn = false;
 			function buttonDown(turnOn) {
 				changeColor("buttonDown", turnOn);
+				buttonDownOn = turnOn;
+				checkDirectionPad("buttonDown", turnOn);
+			}
+
+			function checkDirectionPad(id, turnOn){
+				if(turnOn == true){
+					if("buttonUp" != id && buttonUpOn == true){
+						buttonUp(false);
+					}
+					if("buttonLeft" != id && buttonLeftOn == true){
+						buttonLeft(false);
+					}
+					if("buttonRight" != id && buttonRightOn == true){
+						buttonRight(false);
+					}
+					if("buttonDown" != id && buttonDownOn == true){
+						buttonDown(false);
+					}
+				}
+			}
+
+			function checkHigherLower(id, turnOn){
+				if(turnOn == true){
+					if("buttonHigher" != id && buttonHigherOn == true){
+						buttonHigher(false);
+					}
+					if("buttonLower" != id && buttonLowerOn == true){
+						buttonLower(false);
+					}
+				}
 			}
 
 			document.addEventListener('touchmove', function(event) {
