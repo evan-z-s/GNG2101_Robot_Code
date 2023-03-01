@@ -421,7 +421,6 @@
 
 			window.addEventListener("load", (event) => {
 				changeOpenCloseNameText();
-				console.log("Inner HTML: "+document.getElementById("buttonOpenClose").innerHTML);
 			});
 
 			screen.orientation.addEventListener("change", function(e) {
@@ -476,7 +475,6 @@
 
 			var buttonOpenCloseOn = false;
 			function buttonOpenClose(onlyChangeColor) {
-				console.log("Button Open/Close on: "+buttonOpenCloseOn);
 				if(onlyChangeColor == false){
 					if(buttonOpenCloseOn == false){
 						buttonOpenCloseOn = true;
@@ -624,26 +622,6 @@
 				event.preventDefault()
 			});      
 			*/
-
-			// The item (or items) to press and hold on
-			let item = document.getElementById("buttonOpenClose")
-
-			// Listening for the mouse and touch events    
-			item.addEventListener("mousedown", pressingDown, false);
-			item.addEventListener("mouseup", notPressingDown, false);
-			item.addEventListener("mouseleave", notPressingDown, false);
-			item.addEventListener("touchstart", pressingDown, false);
-			item.addEventListener("touchend", notPressingDown, false);
-
-			function pressingDown(e) {
-				// Start the timer
-				console.log("Turn On!");
-			}
-
-			function notPressingDown(e) {
-				// Stop the timer
-				console.log("Turn Off!")
-			}
 		</script>
 	</body>    
 </html>
