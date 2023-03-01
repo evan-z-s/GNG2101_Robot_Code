@@ -411,7 +411,7 @@
 
 		<script>
 			function changeOpenCloseNameText(){
-				if(window.matchMedia("(orientation: portrait)").matches){
+				if(portraitMode){
 					document.getElementById("buttonOpenClose").innerText = "Open/Close";
 				}
 				else{
@@ -421,26 +421,26 @@
 
 			window.addEventListener("load", (event) => {
 				changeOpenCloseNameText();
+				portraitMode = window.matchMedia("(orientation: portrait)").matches;
 			});
 
 			screen.orientation.addEventListener("change", function(e) {
-				setTimeout(() => {
-					buttonLight(true);
-					buttonOpenClose(true);
-					buttonLower(false);
-					buttonHigher(false);
-					buttonUp(false);
-					buttonLeft(false);
-					buttonRight(false);
-					buttonDown(false);
-					changeOpenCloseNameText();
-				}, 300);
+				portraitMode = !portraitMode;
+				buttonLight(true);
+				buttonOpenClose(true);
+				buttonLower(false);
+				buttonHigher(false);
+				buttonUp(false);
+				buttonLeft(false);
+				buttonRight(false);
+				buttonDown(false);
+				changeOpenCloseNameText();
 			});
 
+			var portraitMode;
 			function changeColor(id,itemOn){
-				var portait = window.matchMedia("(orientation: portrait)").matches;
 				var element = document.getElementById(id);
-				if(portait == true){
+				if(portraitMode == true){
 					if(itemOn == true){
 						element.style.background = "#fa0707cc";
 					}
