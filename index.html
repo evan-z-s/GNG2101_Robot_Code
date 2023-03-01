@@ -410,6 +410,8 @@
 		</div>
 
 		<script>
+			var portraitMode;			
+			
 			function changeOpenCloseNameText(){
 				if(portraitMode){
 					document.getElementById("buttonOpenClose").innerText = "Open/Close";
@@ -437,7 +439,7 @@
 				changeOpenCloseNameText();
 			});
 
-			var portraitMode;
+
 			function changeColor(id,itemOn){
 				var element = document.getElementById(id);
 				if(portraitMode == true){
