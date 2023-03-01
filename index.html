@@ -435,7 +435,7 @@
 					buttonRight(false);
 					buttonDown(false);
 					changeOpenCloseNameText();
-				}, 100);
+				}, 300);
 			});
 
 			function changeColor(id,itemOn){
@@ -464,9 +464,11 @@
 				if(onlyChangeColor == false){
 					if(buttonLightOn == false){
 						buttonLightOn = true;
+						//Turn On Light
 					}
 					else{
 						buttonLightOn = false;
+						//Turn Off light
 					}
 				}
 				changeColor("buttonLight", buttonLightOn);
@@ -478,9 +480,11 @@
 				if(onlyChangeColor == false){
 					if(buttonOpenCloseOn == false){
 						buttonOpenCloseOn = true;
+						//Do Close action
 					}
 					else{
 						buttonOpenCloseOn = false;
+						//Do Open action
 					}
 				}
 				changeColor("buttonOpenClose", buttonOpenCloseOn);
@@ -491,6 +495,7 @@
 				changeColor("buttonLower", turnOn);
 				buttonLowerOn = turnOn;
 				checkHigherLower("buttonLower", turnOn);
+				//Do Lower action if turnOn == true
 			}
 
 			var buttonHigherOn = false;
@@ -498,6 +503,7 @@
 				changeColor("buttonHigher", turnOn);
 				buttonHigherOn = turnOn;
 				checkHigherLower("buttonHigher", turnOn);
+				//Do Higher action if turnOn == true
 			}
 
 			var buttonUpOn = false;
@@ -505,6 +511,7 @@
 				changeColor("buttonUp", turnOn);
 				buttonUpOn = turnOn;
 				checkDirectionPad("buttonUp", turnOn);
+				//Do Up action if turnOn == true
 			}
 
 			var buttonLeftOn = false;
@@ -512,6 +519,7 @@
 				changeColor("buttonLeft", turnOn);
 				buttonLeftOn = turnOn;
 				checkDirectionPad("buttonLeft", turnOn);
+				//Do Left action if turnOn == true
 			}
 
 			var buttonRightOn = false;
@@ -519,6 +527,7 @@
 				changeColor("buttonRight", turnOn);
 				buttonRightOn = turnOn;
 				checkDirectionPad("buttonRight", turnOn);
+				//Do Right action if turnOn == true
 			}
 
 			var buttonDownOn = false;
@@ -526,6 +535,7 @@
 				changeColor("buttonDown", turnOn);
 				buttonDownOn = turnOn;
 				checkDirectionPad("buttonDown", turnOn);
+				//Do Down action if turnOn == true
 			}
 
 			function checkDirectionPad(id, turnOn){
