@@ -413,10 +413,10 @@
 			var portraitMode;			
 			
 			function changeOpenCloseNameText(){
-				if(portraitMode){
+				if(portraitMode == true){
 					document.getElementById("buttonOpenClose").innerText = "Open/Close";
 				}
-				else{
+				else if (portraitMode == false){
 					document.getElementById("buttonOpenClose").innerText = "Claw";
 				}
 			}
