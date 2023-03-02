@@ -422,8 +422,8 @@
 			}
 
 			window.addEventListener("load", (event) => {
-				changeOpenCloseNameText();
 				portraitMode = window.matchMedia("(orientation: portrait)").matches;
+				changeOpenCloseNameText();
 			});
 
 			screen.orientation.addEventListener("change", function(e) {
