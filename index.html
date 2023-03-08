@@ -412,6 +412,7 @@
 		<script>
 			var portraitMode;			
 			
+			//Make text "Open/Close" if in Portrait mode. Make text "Claw" if in Landscape Mode.
 			function changeOpenCloseNameText(){
 				if(portraitMode == true){
 					document.getElementById("buttonOpenClose").innerText = "Open/Close";
@@ -421,11 +422,13 @@
 				}
 			}
 
+			//When page is loaded, check orientation and adjust open/close text
 			window.addEventListener("load", (event) => {
 				portraitMode = window.matchMedia("(orientation: portrait)").matches;
 				changeOpenCloseNameText();
 			});
 
+			//Change button colors when screen orientation changes
 			screen.orientation.addEventListener("change", function(e) {
 				portraitMode = !portraitMode;
 				buttonLight(true);
@@ -439,7 +442,7 @@
 				changeOpenCloseNameText();
 			});
 
-
+			//Change color of button when it's turned on or off, or when we go from portait to landscape and vice versa.
 			function changeColor(id,itemOn){
 				var element = document.getElementById(id);
 				if(portraitMode == true){
@@ -538,6 +541,7 @@
 				//Do Down action if turnOn == true
 			}
 
+			//If a direction button is pressed, all other direction buttons are turned off
 			function checkDirectionPad(id, turnOn){
 				if(turnOn == true){
 					if("buttonUp" != id && buttonUpOn == true){
@@ -555,6 +559,7 @@
 				}
 			}
 
+			//If Higher is on, then Lower is pressed, Higher is turned off. Vice Versa for the Lower button.
 			function checkHigherLower(id, turnOn){
 				if(turnOn == true){
 					if("buttonHigher" != id && buttonHigherOn == true){
@@ -566,6 +571,7 @@
 				}
 			}
 
+			//Function to prevent screen zoom
 			document.addEventListener('touchmove', function(event) {
 				event = event.originalEvent || event;
 				if(event.scale > 1) {
