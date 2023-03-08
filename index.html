@@ -13,7 +13,7 @@
 
 				}
 			}
-			
+
 			@media screen and (orientation: portrait) {
 				.noselect {
 					-webkit-touch-callout: none; /* iOS Safari */
@@ -202,8 +202,14 @@
 
 				.img{
 					pointer-events: none;
-					height:100%; 
 					-webkit-touch-callout: none;
+
+					position: fixed;
+					height:100%; 
+					width: 100%;
+					top: 0px;
+					order: -1;
+					object-fit: cover;
 				}
 			}
 			
