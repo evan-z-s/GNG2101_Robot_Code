@@ -2,8 +2,18 @@
 <html>
   <head>
   <meta name="viewport" content="viewport-fit=cover, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<title> Robot App | Group C2.1 </title>
+		<title> Robot App </title>
     	<style>
+			@supports(padding: max(0px)){
+				body,header,footer{
+					padding-right: min(0vmin,env(safe-area-inset-right));
+					padding-left: min(0vmin,env(safe-area-inset-left));
+					padding-top: min(0vmin,env(safe-area-inset-top));
+					padding-bottom: min(0vmin,env(safe-area-inset-bottom));
+
+				}
+			}
+			
 			@media screen and (orientation: portrait) {
 				.noselect {
 					-webkit-touch-callout: none; /* iOS Safari */
@@ -381,6 +391,12 @@
 				.container {
 					position: relative;
 					width: 100%;
+					padding-left: env(safe-area-inset-left);
+					padding-right: env(safe-area-inset-right);
+					padding-top: env(safe-area-inset-top);
+					padding-bottom: env(safe-area-inset-bottom);
+
+
 				}
 
 				.img{
@@ -397,9 +413,9 @@
     	</style>
 	</head>
 
-	<body style="overflow: hidden;margin:auto">
+	<body style="overflow: hidden;margin:auto">			
+		<img class="img" src="./scientific-lab-robotic-arm-pov-free-video.jpg" alt="RobotPhoto">
 		<div class="container noselect">
-			<img class="img" src="./scientific-lab-robotic-arm-pov-free-video.jpg" alt="RobotPhoto">
 			<div class="buttonLight" id="buttonLight" ontouchstart="buttonLight(false)">Light</div>
 			<div class="buttonOpenClose" id="buttonOpenClose" ontouchstart="buttonOpenClose(false)"></div>
 			<div class="buttonLower" id="buttonLower" ontouchstart="buttonLower(true)" ontouchend="buttonLower(false)">Lower</div>
@@ -579,6 +595,10 @@
 					event.preventDefault();
 				}
   			}, false);
+
+			document.addEventListener('dblclick',function(event){
+				event.preventDefault();}, {
+				passive: false});
 
 
 
