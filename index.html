@@ -203,11 +203,8 @@
 				.img{
 					pointer-events: none;
 					-webkit-touch-callout: none;
-
 					position: fixed;
-					height:100%; 
-					width: 100%;
-					top: 0px;
+					top: -10px;
 					order: -1;
 					object-fit: cover;
 				}
@@ -605,8 +602,6 @@
 			document.addEventListener('dblclick',function(event){
 				event.preventDefault();}, {
 				passive: false});
-
-
 
 			/*
 		 	var webSocketCameraUrl = "ws:\/\/" + window.location.hostname + "/Camera";
