@@ -201,12 +201,15 @@
 				}
 
 				.img{
-					pointer-events: none;
-					-webkit-touch-callout: none;
 					position: fixed;
+					pointer-events: none;
+					height:100%; 
+					-webkit-touch-callout: none;
+					width: 100%;
 					top: -50px;
 					order: -1;
 					object-fit: cover;
+					touch-action: none;
 				}
 			}
 			
@@ -220,6 +223,8 @@
 					user-select: none; /* Non-prefixed version, currently
 										supported by Chrome and Opera */
 					-webkit-user-drag: none;
+					touch-action: none;
+
 
 				}	
 				.buttonLight{
@@ -411,6 +416,7 @@
 					top: 0px;
 					order: -1;
 					object-fit: cover;
+					touch-action: none;
 				}
 			}
     	</style>
@@ -592,7 +598,7 @@
 				}
 			}
 
-			//Function to prevent screen zoom
+			//Function to prevent pinch zoom
 			document.addEventListener('touchmove', function(event) {
 				event = event.originalEvent || event;
 				if(event.scale > 1) {
@@ -600,6 +606,7 @@
 				}
   			}, false);
 
+			//Function to prevent double click zoom zoom
 			document.addEventListener('dblclick',function(event){
 				event.preventDefault();}, {
 				passive: false});
