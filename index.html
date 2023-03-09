@@ -2,6 +2,7 @@
 <html>
   <head>
   <meta name="viewport" content="viewport-fit=cover, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="rgba(27, 7, 250, 0.8)">
 		<title> Robot App </title>
     	<style>
 			@supports(padding: max(0px)){
@@ -204,10 +205,10 @@
 				.img{
 					position: fixed;
 					pointer-events: none;
-					height:110%; 
+					height:100%; 
 					-webkit-touch-callout: none;
 					width: 100%;
-					top: -50px;
+					top: 0px;
 					order: -1;
 					object-fit: cover;
 					touch-action: none;
@@ -454,6 +455,7 @@
 			window.addEventListener("load", (event) => {
 				portraitMode = window.matchMedia("(orientation: portrait)").matches;
 				changeOpenCloseNameText();
+				//Turn off all controls, and lights
 			});
 
 			//Change button colors when screen orientation changes
