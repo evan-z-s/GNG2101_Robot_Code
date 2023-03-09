@@ -451,9 +451,20 @@
 				}
 			}
 
+			function changeThemeColour(){
+				if(portraitMode == true){
+					document.querySelector('meta[name="theme-color"]').setAttribute("content", "rgba(27, 7, 250, 0.8)");
+				}
+				else if (portraitMode == false){
+					document.querySelector('meta[name="theme-color"]').setAttribute("content", "rgba(250, 7, 7, 0.8)");
+				}
+
+			}
+
 			//When page is loaded, check orientation and adjust open/close text
 			window.addEventListener("load", (event) => {
 				portraitMode = window.matchMedia("(orientation: portrait)").matches;
+				changeThemeColour();
 				changeOpenCloseNameText();
 				//Turn off all controls, and lights
 			});
@@ -461,6 +472,7 @@
 			//Change button colors when screen orientation changes
 			screen.orientation.addEventListener("change", function(e) {
 				portraitMode = !portraitMode;
+				changeThemeColour()
 				buttonLight(true);
 				buttonOpenClose(true);
 				buttonLower(false);
