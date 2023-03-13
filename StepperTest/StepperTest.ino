@@ -1,6 +1,6 @@
 const int direction = 5;
 const int pulse = 7;
-const int topSpeed = 26; //Adjust this number to cap top speed
+const int topSpeed = 70; //Adjust this number to cap top speed
 
 long interval = 250;
 long interval2 = 40;
